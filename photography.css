@@ -1,0 +1,87 @@
+.card3{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 80px ;
+    margin-left: 20em;
+    margin-bottom: 5em;
+    max-width: 60%;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    background: #fff;
+    border-top: 4px solid #ccc;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+}
+
+h5{
+    font-weight: bolder;
+}
+
+.quote{
+    font-style: italic;
+}
+
+.slideshow{
+    display:flex;
+    flex-direction: column; 
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    margin-bottom:5.6em;
+    z-index: -4;
+}
+
+
+.buttonleft, .buttonright {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin: -20px;
+    color:  rgb(167, 115, 141);
+    font-weight: bold;
+    transition: 0.5s ease;
+    border-radius:  0 3px 3px 0;
+    user-select: none;    
+}
+
+.buttonleft:hover, .buttonright:hover{
+    background-color: lightpink;
+}
+
+.buttonright{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: 23em;
+    margin-top: 20em;
+    
+}
+
+.buttonleft{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    margin-left: 24em;
+    margin-top: 20em;
+}
+
+.fade{
+    -moz-webkit-animation: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

@@ -1,0 +1,240 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+
+
+/*navigation*/
+
+nav {
+    position: fixed;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(167, 115, 141);
+    z-index: 1;
+}
+
+.name-plate{
+    color:rgb(214, 205, 210);
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color:rgb(214, 205, 210);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 20px;
+    height: 2px;
+    background-color:rgb(214, 205, 210);
+    margin: 5px;
+}
+
+
+/*---body---*/
+/*---header text---*/
+.name-header {
+    display: flex;
+    flex-direction: column;
+    margin: 8em;
+    margin-bottom: 4em;
+    max-width: 100%;
+    text-align: center;
+    background: #fff;
+    border-radius: 6px;
+    letter-spacing: 5px;
+}
+
+
+.name-subcontent{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 5px;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+}
+
+main{
+    display: flex;
+    position: relative;
+}
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.flex2{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.inner-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: stretch;
+  }
+  
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5em;
+    margin-bottom:5.6em;
+    padding: 80px 80px 80px ;
+    max-width: 40%;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    background: #fff;
+    border-top: 4px solid #ccc;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;   
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 80px ;
+    max-width: 60%;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    background: #fff;
+    border-top: 4px solid #ccc;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    
+    
+}
+
+
+.shy{
+    margin-right: 10em;
+    margin-bottom: 5.6em;
+}
+
+.flagstaff{
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.cosplay{
+    padding-left: 15em;
+    padding-top: 3em;
+    padding-bottom: .5em;
+    max-width: 70%;
+}
+
+.caption{
+    font-size: smaller;
+    font-style: italic;
+    padding-bottom: 3em;
+}
+/*---footer---*/
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+   
+}
+
+.main-footer{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(167, 115, 141);
+}
+
+.footer-inner{
+    color:rgb(214, 205, 210);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(214, 205, 210);
+  }
+
+  /*---media queries---*/
+  @media screen and (max-width: 1024px){
+    .nav-links{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+   .nav-links{
+       position: absolute;
+       right: 0px;
+       height: 92vh;
+       top: 8vh;
+       background-color:rgb(167, 115, 141);
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+   }
+
+   
+
+   .burger{
+       display: block;
+       cursor: pointer;
+   }
+
+
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
